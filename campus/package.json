@@ -1,0 +1,21 @@
+{
+  "name": "campus",
+  "version": "1.0.0",
+  "description": "This is a restful api",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "RestfuAPI"
+  ],
+  "author": "mursalin",
+  "license": "MIT"
+}

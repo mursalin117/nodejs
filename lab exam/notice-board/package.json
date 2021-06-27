@@ -1,0 +1,24 @@
+{
+  "name": "notice-board-m",
+  "version": "1.0.0",
+  "description": "This is a simple RESTful CRUD API.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose",
+    "nodemon"
+  ],
+  "author": "mursalin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.2"
+  }
+}

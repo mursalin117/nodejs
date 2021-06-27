@@ -1,0 +1,22 @@
+{
+  "name": "department",
+  "version": "1.0.0",
+  "description": "Node.js web application 'department' where we will be building a Node.js RESTful API for creating, updating, retrieving and deleting notice",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "RESTful",
+    "API"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.2"
+  }
+}
