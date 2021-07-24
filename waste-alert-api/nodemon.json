@@ -1,0 +1,7 @@
+{
+    "env": {
+        "dbUsr": "test",
+        "dbPass": "Test12345",
+        "JWT_KEY": "secret"
+    }
+}
