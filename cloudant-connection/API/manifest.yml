@@ -1,0 +1,5 @@
+---
+applications:
+ - name: location-api
+   random-route: true
+   memory: 256M
