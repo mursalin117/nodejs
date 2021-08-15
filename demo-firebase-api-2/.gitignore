@@ -1,0 +1,4 @@
+# ignore this
+.env
+serviceAccountKey.json
+/node_modules
