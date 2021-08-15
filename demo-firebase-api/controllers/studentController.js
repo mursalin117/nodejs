@@ -48,6 +48,39 @@ const getAllStudents = async (req, res, next) => {
     }
 }
 
+const getSearchStudent = async (req, res, next) => {
+    try {
+        const sub = req.params.sub;
+        const data = await firestore.collection('students').where('subject', '==', sub).get();
+        if (data.empty) {
+            return res.status(404).send({
+                message: 'No data found'
+            });
+        } else {
+            const students = [];
+            data.forEach(doc => {
+                const student = new Student (
+                    doc.id,
+                    doc.data().name,
+                    doc.data().roll,
+                    doc.data().subject,
+                    doc.data().year,
+                    doc.data().semester
+                );
+                students.push(student);
+            });
+            return res.send({
+                count: students.length,
+                students
+            });
+        }
+    } catch (error) {
+        return res.status(400).send({
+            message: error.message
+        });
+    }
+}
+
 const getStudent = async (req, res, next) => {
     try {
         const id = req.params.id;
